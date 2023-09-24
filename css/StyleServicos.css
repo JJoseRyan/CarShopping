@@ -13,13 +13,12 @@ nav {/*barra azul da navbar e rodapé*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-nav .logo a { /*logotipo do site*/
-    text-decoration: none;
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+.logo-image { /*logotipo do site*/
+    width: 15%;
+    scale: 2;
 }
 
 nav ul { /*navbar superior*/
@@ -44,12 +43,33 @@ nav li a:hover {/*animação da navbar superior*/
     color: black;
 }
 
-.banner {/*parte do fundo do site*/
-    height: 265vh;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    height: auto;
+}
+
+main {
+    flex: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.308)), url('../img/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.banner {/*parte do fundo do site*/
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,17 +96,17 @@ nav li a:hover {/*animação da navbar superior*/
     backdrop-filter: blur(5px);
     border: 1px solid #18929D;
     border-radius: 10px;
-    display: auto;
-    width: auto;
-    height: auto;
+    /* display: block; */
+    /* width: auto; */
     padding: 10px;
-    margin: 80px 80px 80px 80px;
+    /* margin: 80px 20px 80px 20px; */
+    scale: 0.8;
 }
 
 .tipo-servico h1{/*alterando cor e tamanho da fonte do titulo*/
     color: #fff;
     font-size: 50px;
-    margin-bottom: 150px;
+    margin: 50px 0;
 }
 
 .tipo-servico a:hover{/*animação do texto do link*/
@@ -103,7 +123,7 @@ nav li a:hover {/*animação da navbar superior*/
 }
 
 .tipo-servico a{/*alterando cor e retirando decoração do texto*/
-    font-size: 40px;
+    font-size: 25px;
     color:#fff;
     text-decoration: none;
 }
@@ -131,12 +151,12 @@ nav li a:hover {/*animação da navbar superior*/
 
 @media only screen and (max-width: 980px){/*deixando o sistema responsivo*/
     .banner {/*parte do fundo do site*/
-        height: 300vh;
+        /* height: 100vh; */
     }
 }
 
 @media only screen and (max-width: 800px){/*deixando o sistema responsivo*/
     .banner {/*parte do fundo do site*/
-        height: 300vh;
+        /* height: 100vh; */
     }
 }
